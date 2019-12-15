@@ -86,7 +86,8 @@ document.execCommand("Copy");
 
 			  <?php if( !isset( $pcpros_citations_businessname ) || $pcpros_citations_businessname == '' ): ?>
 
-				<h3>Please Enter Your Business Information Below</h3>
+				<h3>Please Enter Your Business Information Below.</h3>
+				<p class="upgrade-p"><strong>Enter A Name And Click Save For Additional Fields.</strong></p>
 
 					<form name="pcpros_citations_website_form" id="scan-form" class="diagnostic-scan" method="post">
 
@@ -94,7 +95,7 @@ document.execCommand("Copy");
 
 						<table class="form-table">
 							<tr valign="top">
-								<td><label for="pcpros_citations_businessname">Business Name</label>
+								<td><label for="pcpros_citations_businessname">Business Name *</label>
 								<br /><input name="pcpros_citations_businessname" id="pcpros_citations_businessname" type="text" class="form-control" value="" class="regular-text" placeholder="Business Name" /></td>
 								<td><label for="pcpros_citations_businessphone">Business Phone Number</label>
 								<br /><input name="pcpros_citations_businessphone" id="pcpros_citations_businessphone" type="text" class="form-control" value="" class="regular-text"  placeholder="(555) 555-1234" /></td>
@@ -108,96 +109,31 @@ document.execCommand("Copy");
 							</tr>
 
 							<tr valign="top">
-								<td><label for="pcpros_citations_businesscity">City</label>
+								<td><label for="pcpros_citations_businesscity">City / Town</label>
 								<br /><input name="pcpros_citations_businesscity" id="pcpros_citations_businesscity" type="text" value="" class="regular-text"  placeholder="" /></td>
-								<td><label for="pcpros_citations_businessstate">State</label>
+								<td><label for="pcpros_citations_businessstate">State / County / Region</label>
 								<br /><input name="pcpros_citations_businessstate" id="pcpros_citations_businessstate" type="text" value="" class="regular-text"  placeholder="" /></td>
 							</tr>
 							<tr valign="top">
-								<td><label for="pcpros_citations_businesszip">Zip</label>
+								<td><label for="pcpros_citations_businesszip">Zipcode / Postcode</label>
 								<br /><input name="pcpros_citations_businesszip" id="pcpros_citations_businesszip" type="text" value="" class="regular-text"  placeholder="" /></td>
-								<td><label for="pcpros_citations_website">Website</label>
+								<td><label for="pcpros_citations_businesscountry">Country</label>
+								<br /><input name="pcpros_citations_businesscountry" id="pcpros_citations_businesscountry" type="text" value="" class="regular-text"  placeholder="" /></td>
+							</tr>
+							<tr valign="top">
+								<td><label for="pcpros_citations_businesslogorectanglelink">Logo URL</label>
+								<br /><input name="pcpros_citations_businesslogorectanglelink" id="pcpros_citations_businesslogorectanglelink" type="text" value="" class="regular-text"  placeholder="" /></td>
+								<td><label for="pcpros_citations_website">Website URL</label>
 								<br /><input name="pcpros_citations_website" id="pcpros_citations_website" type="text" value="" class="regular-text"  placeholder="https://www.pcprosllc.com" /></td>
 							</tr>
-							<tr valign="top">
-								<td><label for="pcpros_citations_businesscontactfullname">Contact Name </label>
-								<br /><input name="pcpros_citations_businesscontactfullname" id="pcpros_citations_businesscontactfullname" type="text" value="" class="regular-text" placeholder="John Doe" /></td>
-								<td><label for="pcpros_citations_businessemail1">Contact Email</label>
-								<br /><input name="pcpros_citations_businessemail1" id="pcpros_citations_businessemail1" type="text" value="" class="regular-text" placeholder="john@email.com" /></td>
-							</tr>
+
 							<tr valign="top">
 								<td><input class="btn btn-primary" type="submit" id="scan-submit" name="pcpros_citations_website_submit" value="Save" /></td>
 							</tr>
 
 						</table>
 
-						<h3>Social Media Accounts</h3>
 
-						<table class="form-table">
-							<tr valign="top">
-								<td><label for="pcpros_citations_facebooklink">Facebook</label>
-								<br /><input name="pcpros_citations_facebooklink" id="pcpros_citations_facebooklink" type="text" value="" class="regular-text" placeholder="https://www.facebook.com/pcprosllc1/" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_twitterlink">Twitter</label>
-								<br /><input name="pcpros_citations_twitterlink" id="pcpros_citations_twitterlink" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-							<tr valign="top">
-								<td><label for="pcpros_citations_youtubechannel">YouTube</label>
-								<br /><input name="pcpros_citations_youtubechannel" id="pcpros_citations_youtubechannel" type="text" value="" class="regular-text" placeholder="https://www.youtube.com/channel/UCmw-FhUEaAyu1LdSbFXwFBw" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_linkedinlink">LinkedIn</label>
-								<br /><input name="pcpros_citations_linkedinlink" id="pcpros_citations_linkedinlink" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-							<tr valign="top">
-								<td><label for="pcpros_citations_instagramlink">Instagram</label>
-								<br /><input name="pcpros_citations_instagramlink" id="pcpros_citations_instagramlink" type="text" value="" class="regular-text" placeholder="" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_pinterestlink">Pinterest</label>
-								<br /><input name="pcpros_citations_pinterestlink" id="pcpros_citations_pinterestlink" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-							<tr valign="top">
-								<td><label for="pcpros_citations_tiktoklink">TikTok</label>
-								<br /><input name="pcpros_citations_tiktoklink" id="pcpros_citations_tiktoklink" type="text" value="" class="regular-text" placeholder="" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_snapchatlink">Snapchat</label>
-								<br /><input name="pcpros_citations_snapchatlink" id="pcpros_citations_snapchatlink" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-
-							<tr valign="top">
-								<td><input class="btn btn-primary" type="submit" id="scan-submit" name="pcpros_citations_website_submit" value="Save" /></td>
-							</tr>
-						</table>
-
-						<h3>Google My Business & Google Maps Information</h3>
-
-						<table class="form-table">
-							<tr valign="top">
-								<td><label for="pcpros_citations_googleemail">GMB User Email Account</label>
-								<br /><input name="pcpros_citations_googleemail" id="pcpros_citations_googleemail" type="text" value="" class="regular-text" placeholder="" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_googlemybusinesscid">Google My Business CID</label>
-								<br /><input name="pcpros_citations_googlemybusinesscid" id="pcpros_citations_googlemybusinesscid" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-							<tr valign="top">
-								<td><label for="pcpros_citations_googlemapsplaceid">Google Maps Places ID</label>
-								<br /><input name="pcpros_citations_googlemapsplaceid" id="pcpros_citations_googlemapsplaceid" type="text" value="" class="regular-text" placeholder="" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_businesscategory1">Business Category 1</label>
-								<br /><input name="pcpros_citations_businesscategory1" id="pcpros_citations_businesscategory1" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-							<tr valign="top">
-								<td><label for="pcpros_citations_businesscategory2">Business Category 2</label>
-								<br /><input name="pcpros_citations_businesscategory2" id="pcpros_citations_businesscategory2" type="text" value="" class="regular-text" placeholder="" /></td>
-								<td></td>
-								<td><label for="pcpros_citations_businesscategory3">Business Category 3</label>
-								<br /><input name="pcpros_citations_businesscategory3" id="pcpros_citations_businesscategory3" type="text" value="" class="regular-text" placeholder="" /></td>
-							</tr>
-							<tr valign="top">
-								<td><input class="btn btn-primary" type="submit" id="scan-submit" name="pcpros_citations_website_submit" value="Save" /></td>
-							</tr>
-						</table>
-
-					</form>
 
 				<?php else: ?>
 
@@ -209,7 +145,7 @@ document.execCommand("Copy");
 
 						<table class="form-table">
 							<tr valign="top">
-								<td><label for="pcpros_citations_businessname">Business Name</label>
+								<td><label for="pcpros_citations_businessname">Business Name *</label>
 								<br /><input name="pcpros_citations_businessname" id="pcpros_citations_businessname" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessname; ?>" /></td>
 								<td><label for="pcpros_citations_businessphone">Business Phone Number</label>
 								<br /><input name="pcpros_citations_businessphone" id="pcpros_citations_businessphone" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessphone; ?>" /></td>
@@ -223,22 +159,52 @@ document.execCommand("Copy");
 							</tr>
 
 							<tr valign="top">
-								<td><label for="pcpros_citations_businesscity">City</label>
+								<td><label for="pcpros_citations_businesscity">City / Town</label>
 								<br /><input name="pcpros_citations_businesscity" id="pcpros_citations_businesscity" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesscity; ?>" /></td>
-								<td><label for="pcpros_citations_businessstate">State</label>
+								<td><label for="pcpros_citations_businessstate">State / County / Region</label>
 								<br /><input name="pcpros_citations_businessstate" id="pcpros_citations_businessstate" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessstate; ?>" /></td>
 							</tr>
 							<tr valign="top">
-								<td><label for="pcpros_citations_businesszip">Zip</label>
+								<td><label for="pcpros_citations_businesszip">Zipcode / Postcode</label>
 								<br /><input name="pcpros_citations_businesszip" id="pcpros_citations_businesszip" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesszip; ?>" /></td>
-								<td><label for="pcpros_citations_website">Website</label>
+								<td><label for="pcpros_citations_businesscountry">Country</label>
+								<br /><input name="pcpros_citations_businesscountry" id="pcpros_citations_businesscountry" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesscountry; ?>" /></td>
+							</tr>
+							<tr valign="top">
+								<td><label for="pcpros_citations_businesslogorectanglelink">Logo URL</label>
+								<br /><input name="pcpros_citations_businesslogorectanglelink" id="pcpros_citations_businesslogorectanglelink" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesslogorectanglelink; ?>" /></td>
+								<td><label for="pcpros_citations_website">Website URL</label>
 								<br /><input name="pcpros_citations_website" id="pcpros_citations_website" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_website; ?>" /></td>
 							</tr>
 							<tr valign="top">
-								<td><label for="pcpros_citations_businesscontactfullname">Contact Name</label>
-								<br /><input name="pcpros_citations_businesscontactfullname" id="pcpros_citations_businesscontactfullname" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesscontactfullname; ?>" /></td>
+								<td><label for="pcpros_citations_businesscontactfirstname">Contact First Name</label>
+								<br /><input name="pcpros_citations_businesscontactfirstname" id="pcpros_citations_businesscontactfirstname" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesscontactfirstname; ?>" /></td>
+								<td><label for="pcpros_citations_businesscontactlastname">Contact Last Name</label>
+								<br /><input name="pcpros_citations_businesscontactlastname" id="pcpros_citations_businesscontactlastname" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesscontactlastname; ?>" /></td>
+							</tr>
+							<tr valign="top">
 								<td><label for="pcpros_citations_businessemail1">Contact Email</label>
 								<br /><input name="pcpros_citations_businessemail1" id="pcpros_citations_businessemail1" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessemail1; ?>" /></td>
+								<td><label for="pcpros_citations_businessmobile">Contact Mobile</label>
+								<br /><input name="pcpros_citations_businessmobile" id="pcpros_citations_businessmobile" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessmobile; ?>" /></td>
+							</tr>
+							<tr valign="top">
+								<td><label for="pcpros_citations_businessemail2">Citation Email</label>
+								<br /><input name="pcpros_citations_businessemail2" id="pcpros_citations_businessemail2" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessemail2; ?>" /></td>
+								<td><label for="pcpros_citations_businessfax">Business Fax</label>
+								<br /><input name="pcpros_citations_businessfax" id="pcpros_citations_businessfax" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessfax; ?>" /></td>
+							</tr>
+							<tr valign="top">
+								<td><label for="pcpros_citations_businessnumemployees">Business Number of Employees</label>
+								<br /><input name="pcpros_citations_businessnumemployees" id="pcpros_citations_businessnumemployees" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businessnumemployees; ?>" /></td>
+								<td><label for="pcpros_citations_datefounded">Date Founded</label>
+								<br /><input name="pcpros_citations_datefounded" id="pcpros_citations_datefounded" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_datefounded; ?>" /></td>
+							</tr>
+							<tr valign="top">
+								<td><label for="pcpros_citations_apptlink">Appointment Link</label>
+								<br /><input name="pcpros_citations_apptlink" id="pcpros_citations_apptlink" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_apptlink; ?>" /></td>
+								<td><label for="pcpros_citations_businesslicensenum">Business License Number</label>
+								<br /><input name="pcpros_citations_businesslicensenum" id="pcpros_citations_businesslicensenum" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_businesslicensenum; ?>" /></td>
 							</tr>
 							<tr valign="top">
 								<td><input class="btn btn-primary" type="submit" id="scan-submit" name="pcpros_citations_website_submit" value="Save" /></td>
@@ -298,8 +264,6 @@ document.execCommand("Copy");
 
 				<p><b><i>Note: All fields will be updated with any Save button click.</i></b></p>
 
-					<?php endif; ?>
-
 				</div><!-- .col-md-6 -->
 
 				<div class="col-md-6">
@@ -307,6 +271,7 @@ document.execCommand("Copy");
 				<h3> <br /></h3>
 
 						<table class="form-table">
+
 							<tr valign="top">
 								<td><label for="pcpros_citations_businessshortdescription">Business Short Description</label>
 								<br /><textarea name="pcpros_citations_businessshortdescription" class="form-control" rows="5" id="pcpros_citations_businessshortdescription" onClick="pcpros_select_all(this);" type="text" > <?php echo $pcpros_citations_businessshortdescription; ?></textarea></td>
@@ -316,32 +281,75 @@ document.execCommand("Copy");
 							</tr>
 
 							<tr valign="top">
-								<td><label for="pcpros_citations_googleemail">Google User Account</label>
-								<br /><input name="pcpros_citations_googleemail" id="pcpros_citations_googleemail" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_googleemail; ?>" /></td>
-								<td></td>
 								<td><label for="pcpros_citations_businesscategory1">Business Category 1</label>
 								<br /><input name="pcpros_citations_businesscategory1" id="pcpros_citations_businesscategory1" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businesscategory1; ?>" /></td>
+								<td></td>
+								<td><label for="pcpros_citations_businessservice1">Business Service / Product 1</label>
+								<br /><input name="pcpros_citations_businessservice1" id="pcpros_citations_businessservice1" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businessservice1; ?>" /></td>
 							</tr>
+
 							<tr valign="top">
 								<td><label for="pcpros_citations_businesscategory2">Business Category 2</label>
 								<br /><input name="pcpros_citations_businesscategory2" id="pcpros_citations_businesscategory2" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businesscategory2; ?>" /></td>
 								<td></td>
+								<td><label for="pcpros_citations_businessservice2">Business Service / Product 2</label>
+								<br /><input name="pcpros_citations_businessservice2" id="pcpros_citations_businessservice2" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businessservice2; ?>" /></td>
+							</tr>
+
+							<tr valign="top">
 								<td><label for="pcpros_citations_businesscategory3">Business Category 3</label>
 								<br /><input name="pcpros_citations_businesscategory3" id="pcpros_citations_businesscategory3" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businesscategory3; ?>" /></td>
+								<td></td>
+								<td><label for="pcpros_citations_businessservice3">Business Service / Product 3</label>
+								<br /><input name="pcpros_citations_businessservice3" id="pcpros_citations_businessservice3" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businessservice3; ?>" /></td>
+							</tr>
+
+							<tr valign="top">
+								<td><label for="pcpros_citations_businesscategory4">Business Category 4</label>
+								<br /><input name="pcpros_citations_businesscategory4" id="pcpros_citations_businesscategory4" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businesscategory4; ?>" /></td>
+								<td></td>
+								<td><label for="pcpros_citations_businessservice4">Business Service / Product 4</label>
+								<br /><input name="pcpros_citations_businessservice4" id="pcpros_citations_businessservice4" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businessservice4; ?>" /></td>
+							</tr>
+
+							<tr valign="top">
+								<td><label for="pcpros_citations_businesscategory5">Business Category 5</label>
+								<br /><input name="pcpros_citations_businesscategory5" id="pcpros_citations_businesscategory5" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businesscategory5; ?>" /></td>
+								<td></td>
+								<td><label for="pcpros_citations_businessservice5">Business Service / Product 5</label>
+								<br /><input name="pcpros_citations_businessservice5" id="pcpros_citations_businessservice5" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businessservice5; ?>" /></td>
+							</tr>
+
+							<tr valign="top">
+								<td><label for="pcpros_citations_businessgoogleanalytics">Google Analytics ID</label>
+								<br /><input name="pcpros_citations_businessgoogleanalytics" id="pcpros_citations_businessgoogleanalytics" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_businessgoogleanalytics; ?>" /></td>
+								<td></td>
+								<td><label for="pcpros_citations_googleemail">Google User Account</label>
+								<br /><input name="pcpros_citations_googleemail" id="pcpros_citations_googleemail" onClick="pcpros_select_all(this);" type="text" value="<?php echo $pcpros_citations_googleemail; ?>" /></td>
 							</tr>
 							<tr valign="top">
-								<td><label for="pcpros_citations_apptlink">Appointment Link</label>
-								<br /><input name="pcpros_citations_apptlink" id="pcpros_citations_apptlink" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_apptlink; ?>" /></td>
+								<td><label for="pcpros_citations_facebooklink">Facebook Pixel ID</label>
+								<br /><input name="pcpros_citations_facebooklink" id="pcpros_citations_facebooklink" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_facebooklink; ?>" /></td>
 								<td></td>
-								<td><label for="pcpros_citations_datefounded">Date Founded</label>
-								<br /><input name="pcpros_citations_datefounded" id="pcpros_citations_datefounded" type="text" onClick="pcpros_select_all(this);" value="<?php echo $pcpros_citations_datefounded; ?>" /></td>
+								<td><label for="$pcpros_citations_businesssphotourl1">Photo 1 URL</label>
+								<br /><input name="$pcpros_citations_businesssphotourl1" id="$pcpros_citations_businesssphotourl1" type="text" onClick="pcpros_select_all(this);" value="<?php echo $$pcpros_citations_businesssphotourl1; ?>" /></td>
 							</tr>
+							<tr valign="top">
+								<td><label for="$pcpros_citations_businesssphotourl2">Photo 2 URL</label>
+								<br /><input name="$pcpros_citations_businesssphotourl2" id="$pcpros_citations_businesssphotourl2" type="text" onClick="pcpros_select_all(this);" value="<?php echo $$pcpros_citations_businesssphotourl2; ?>" /></td>
+								<td></td>
+								<td><label for="$pcpros_citations_businesssphotourl3">Photo 3 URL</label>
+								<br /><input name="$pcpros_citations_businesssphotourl3" id="$pcpros_citations_businesssphotourl3" type="text" onClick="pcpros_select_all(this);" value="<?php echo $$pcpros_citations_businesssphotourl3; ?>" /></td>
+							</tr>
+
 							<tr valign="top">
 								<td><input class="btn btn-primary" type="submit" id="scan-submit" name="pcpros_citations_website_submit" value="Save" /></td>
 							</tr>
 						</table>
 
 					</form>
+
+				<?php endif; ?>
 
 				<?php if( isset( $pcpros_citations_businessname ) && $pcpros_citations_businessname !== '' ){ ?>
 
@@ -351,13 +359,7 @@ document.execCommand("Copy");
 				<iframe width="100%" height="500px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=<?php echo str_replace(" ","%20","$pcpros_citations_businessname"); ?>%2C<?php echo str_replace(" ","%20","$pcpros_citations_businessaddress1"); ?>%2C%20<?php echo "$pcpros_citations_businesscity"; ?>%2C%20<?php echo "$pcpros_citations_businessstate"; ?>%2C%20United%20States&key=AIzaSyDiQIl2qN62tn1zPDjhPn32NuU8KYbDjhg" allowfullscreen></iframe>
 				</div>
 
-				<p class="text-align-center">If your business does not show up on the map or shows up incorrectly it means your business is not listed correctly with Google.</p>
-
-				<p class="text-align-center">If you need assistance with your Google Map or Google My Business Setup please see the contact us tab.</p>
-
-
-
-
+				<p class="text-align-center">If your business does not show up on the map or shows up incorrectly,<br />it means your business is not listed correctly with Google.</p>
 
 
 				<?php } ?>

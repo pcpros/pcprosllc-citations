@@ -45,6 +45,7 @@ function pcpros_citations_options_page() {
 		$hidden_field = esc_html( $_POST['pcpros_citations_form_submitted'] );
 		if( $hidden_field == 'Y' ) {
 			$pcpros_citations_businessname 			= esc_html( $_POST['pcpros_citations_businessname'] );
+			$pcpros_citations_businesscountry 			= esc_html( $_POST['pcpros_citations_businesscountry'] );
 			$pcpros_citations_businessaddress1 		= esc_html( $_POST['pcpros_citations_businessaddress1'] );
 			$pcpros_citations_businessaddress2 		= esc_html( $_POST['pcpros_citations_businessaddress2'] );
 			$pcpros_citations_businesscity 			= esc_html( $_POST['pcpros_citations_businesscity'] );
@@ -97,7 +98,8 @@ function pcpros_citations_options_page() {
 			$pcpros_citations_snapchatlink 		= esc_html( $_POST['pcpros_citations_snapchatlink'] );
 			$pcpros_citations_otherlink1 		= esc_html( $_POST['pcpros_citations_otherlink1'] );
 			$pcpros_citations_otherlink2 		= esc_html( $_POST['pcpros_citations_otherlink2'] );
-			$pcpros_citations_businesslogosquare 		= esc_html( $_POST['pcpros_citations_businesslogosquare'] );
+			$pcpros_citations_businesslogosquarelink 		= esc_html( $_POST['pcpros_citations_businesslogosquarelink'] );
+			$pcpros_citations_businesslogorectanglelink 		= esc_html( $_POST['pcpros_citations_businesslogorectanglelink'] );
 			$pcpros_citations_businessphoto1 		= esc_html( $_POST['pcpros_citations_businessphoto1'] );
 			$pcpros_citations_businessphoto2 		= esc_html( $_POST['pcpros_citations_businessphoto2'] );
 			$pcpros_citations_otherinfo1 		= esc_html( $_POST['pcpros_citations_otherinfo1'] );
@@ -107,8 +109,26 @@ function pcpros_citations_options_page() {
 			$pcpros_citations_parking 		= esc_html( $_POST['pcpros_citations_parking'] );
 			$pcpros_citations_wifi 		= esc_html( $_POST['pcpros_citations_wifi'] );
 			$pcpros_citations_apptlink 		= esc_html( $_POST['pcpros_citations_apptlink'] );
+			$pcpros_citations_businessmobile			= esc_html( $_POST['pcpros_citations_businessmobile'] );
+      $pcpros_citations_businessfax 			= esc_html( $_POST['pcpros_citations_businessfax'] );
+      $pcpros_citations_businessnumemployees 			= esc_html( $_POST['pcpros_citations_businessnumemployees'] );
+      $pcpros_citations_businesslicensenum 			= esc_html( $_POST['pcpros_citations_businesslicensenum'] );
+      $pcpros_citations_businessgmbsite 			= esc_html( $_POST['pcpros_citations_businessgmbsite'] );
+      $pcpros_citations_businessgoogleanalytics 			= esc_html( $_POST['pcpros_citations_businessgoogleanalytics'] );
+      $pcpros_citations_businessfbpixel 			= esc_html( $_POST['pcpros_citations_businessfbpixel'] );
+			$pcpros_citations_businesscategory4			= esc_html( $_POST['pcpros_citations_businesscategory4'] );
+      $pcpros_citations_businesscategory5 			= esc_html( $_POST['pcpros_citations_businesscategory5'] );
+      $pcpros_citations_businessservice1 			= esc_html( $_POST['pcpros_citations_businessservice1'] );
+      $pcpros_citations_businessservice2 			= esc_html( $_POST['pcpros_citations_businessservice2'] );
+      $pcpros_citations_businessservice3 			= esc_html( $_POST['pcpros_citations_businessservice3'] );
+      $pcpros_citations_businessservice4 			= esc_html( $_POST['pcpros_citations_businessservice4'] );
+      $pcpros_citations_businessservice5 			= esc_html( $_POST['pcpros_citations_businessservice5'] );
+			$pcpros_citations_businesssphotourl1 			= esc_html( $_POST['pcpros_citations_businesssphotourl1'] );
+      $pcpros_citations_businesssphotourl2 			= esc_html( $_POST['pcpros_citations_businesssphotourl2'] );
+      $pcpros_citations_businesssphotourl3 			= esc_html( $_POST['pcpros_citations_businesssphotourl3'] );
 
 			$options['pcpros_citations_businessname']			= $pcpros_citations_businessname;
+			$options['pcpros_citations_businesscountry']			= $pcpros_citations_businesscountry;
 			$options['pcpros_citations_businessaddress1']		= $pcpros_citations_businessaddress1;
 			$options['pcpros_citations_businessaddress2']		= $pcpros_citations_businessaddress2;
 			$options['pcpros_citations_businesscity']			= $pcpros_citations_businesscity;
@@ -160,8 +180,8 @@ function pcpros_citations_options_page() {
 			$options['pcpros_citations_youtubechannel']		= $pcpros_citations_youtubechannel;
 			$options['pcpros_citations_otherlink1']	= $pcpros_citations_otherlink1;
 			$options['pcpros_citations_otherlink2']	= $pcpros_citations_otherlink2;
-			$options['pcpros_citations_businesslogosquare']	= $pcpros_citations_businesslogosquare;
-			$options['pcpros_citations_businesslogorecatngle']	= $pcpros_citations_businesslogorecatngle;
+			$options['pcpros_citations_businesslogosquarelink']	= $pcpros_citations_businesslogosquarelink;
+			$options['pcpros_citations_businesslogorectanglelink']	= $pcpros_citations_businesslogorectanglelink;
 			$options['pcpros_citations_businessphoto1']	= $pcpros_citations_businessphoto1;
 			$options['pcpros_citations_businessphoto2']	= $pcpros_citations_businessphoto2;
 			$options['pcpros_citations_otherinfo1']	= $pcpros_citations_otherinfo1;
@@ -172,6 +192,23 @@ function pcpros_citations_options_page() {
 			$options['pcpros_citations_wifi']	= $pcpros_citations_wifi;
 			$options['pcpros_citations_apptlink']	= $pcpros_citations_apptlink;
 			$options['last_updated']				= time();
+			$options['pcpros_citations_businessmobile']			= $pcpros_citations_businessmobile;
+      $options['pcpros_citations_businessfax']			= $pcpros_citations_businessfax;
+      $options['pcpros_citations_businessnumemployees']			= $pcpros_citations_businessnumemployees;
+      $options['pcpros_citations_businesslicensenum']			= $pcpros_citations_businesslicensenum;
+      $options['pcpros_citations_businessgmbsite']			= $pcpros_citations_businessgmbsite;
+      $options['pcpros_citations_businessgoogleanalytics']			= $pcpros_citations_businessgoogleanalytics;
+      $options['pcpros_citations_businessfbpixel']			= $pcpros_citations_businessfbpixel;
+			$options['pcpros_citations_businesscategory4']			= $pcpros_citations_businesscategory4;
+      $options['pcpros_citations_businesscategory5']			= $pcpros_citations_businesscategory5;
+      $options['pcpros_citations_businessservice1']			= $pcpros_citations_businessservice1;
+      $options['pcpros_citations_businessservice2']			= $pcpros_citations_businessservice2;
+      $options['pcpros_citations_businessservice3']			= $pcpros_citations_businessservice3;
+      $options['pcpros_citations_businessservice4']			= $pcpros_citations_businessservice4;
+      $options['pcpros_citations_businessservice5']			= $pcpros_citations_businessservice5;
+			$options['pcpros_citations_businesssphotourl1']			= $pcpros_citations_businesssphotourl1;
+      $options['pcpros_citations_businesssphotourl2']			= $pcpros_citations_businesssphotourl2;
+      $options['pcpros_citations_businesssphotourl3']			= $pcpros_citations_businesssphotourl3;
 
 			update_option( 'pcpros_citations_options', $options );
 		}
@@ -180,7 +217,9 @@ function pcpros_citations_options_page() {
 	$options = get_option( 'pcpros_citations_options' );
 	if( $options != '' ) {
 
+
 		$pcpros_citations_businessname = $options['pcpros_citations_businessname'];
+		$pcpros_citations_businesscountry = $options['pcpros_citations_businesscountry'];
 		$pcpros_citations_businessaddress1 = $options['pcpros_citations_businessaddress1'];
 		$pcpros_citations_businessaddress2 = $options['pcpros_citations_businessaddress2'];
 		$pcpros_citations_businesscity = $options['pcpros_citations_businesscity'];
@@ -234,8 +273,8 @@ function pcpros_citations_options_page() {
 		$pcpros_citations_snapchatlink = $options['pcpros_citations_snapchatlink'];
 		$pcpros_citations_otherlink1 = $options['pcpros_citations_otherlink1'];
 		$pcpros_citations_otherlink2 = $options['pcpros_citations_otherlink2'];
-		$pcpros_citations_businesslogosquare = $options['pcpros_citations_businesslogosquare'];
-		$pcpros_citations_businesslogorecatngle= $options['pcpros_citations_businesslogorecatngle'];
+		$pcpros_citations_businesslogosquarelink = $options['pcpros_citations_businesslogosquarelink'];
+		$pcpros_citations_businesslogorectanglelink = $options['pcpros_citations_businesslogorectanglelink'];
 		$pcpros_citations_businessphoto1 = $options['pcpros_citations_businessphoto1'];
 		$pcpros_citations_businessphoto2 = $options['pcpros_citations_businessphoto2'];
 		$pcpros_citations_otherinfo1 = $options['pcpros_citations_otherinfo1'];
@@ -245,6 +284,24 @@ function pcpros_citations_options_page() {
 		$pcpros_citations_parking = $options['pcpros_citations_parking'];
 		$pcpros_citations_wifi = $options['pcpros_citations_wifi'];
 		$pcpros_citations_apptlink = $options['pcpros_citations_apptlink'];
+		$pcpros_citations_businessmobile = $options['pcpros_citations_businessmobile'];
+		$pcpros_citations_businessfax = $options['pcpros_citations_businessfax'];
+		$pcpros_citations_businessnumemployees = $options['pcpros_citations_businessnumemployees'];
+		$pcpros_citations_businesslicensenum = $options['pcpros_citations_businesslicensenum'];
+		$pcpros_citations_businessgmbsite = $options['pcpros_citations_businessgmbsite'];
+		$pcpros_citations_businessgoogleanalytics = $options['pcpros_citations_businessgoogleanalytics'];
+		$pcpros_citations_businessfbpixel = $options['pcpros_citations_businessfbpixel'];
+		$pcpros_citations_businesscategory4 = $options['pcpros_citations_businesscategory4'];
+		$pcpros_citations_businesscategory5 = $options['pcpros_citations_businesscategory5'];
+		$pcpros_citations_businessservice1 = $options['pcpros_citations_businessservice1'];
+		$pcpros_citations_businessservice2 = $options['pcpros_citations_businessservice2'];
+		$pcpros_citations_businessservice3 = $options['pcpros_citations_businessservice3'];
+		$pcpros_citations_businessservice4 = $options['pcpros_citations_businessservice4'];
+		$pcpros_citations_businessservice5 = $options['pcpros_citations_businessservice5'];
+		$pcpros_citations_businesssphotourl1 = $options['pcpros_citations_businesssphotourl1'];
+		$pcpros_citations_businesssphotourl2 = $options['pcpros_citations_businesssphotourl2'];
+		$pcpros_citations_businesssphotourl3 = $options['pcpros_citations_businesssphotourl3'];
+
 	}
 
 	require( 'inc/options-page-wrapper.php' );
